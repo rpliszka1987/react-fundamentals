@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 
 const BookList = () => {
   return (
-    <section>
+    <section className="booklist">
+      <Book />
+      <Book />
       <Book />
       <Book />
     </section>
@@ -12,7 +15,7 @@ const BookList = () => {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -21,7 +24,10 @@ const Book = () => {
 };
 
 const Image = () => (
-  <img src="https://images-na.ssl-images-amazon.com/images/I/81ytGlIkLoL._AC_UL600_SR600,400_.jpg" />
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/81ytGlIkLoL._AC_UL600_SR600,400_.jpg"
+    alt="Hillbilly Elegy"
+  />
 );
 const Title = () => (
   <h2>Hillbilly Elegy: A Memoir of a Family and Culture in Crisis</h2>

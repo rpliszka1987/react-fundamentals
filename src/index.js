@@ -23,12 +23,7 @@ const Book = () => {
   );
 };
 
-const Image = () => (
-  <img
-    src="https://images-na.ssl-images-amazon.com/images/I/81ytGlIkLoL._AC_UL600_SR600,400_.jpg"
-    alt="Hillbilly Elegy"
-  />
-);
+const Image = () => <img src="./images/book-1.jpg" alt="Hillbilly Elegy" />;
 const Title = () => (
   <h2>Hillbilly Elegy: A Memoir of a Family and Culture in Crisis</h2>
 );

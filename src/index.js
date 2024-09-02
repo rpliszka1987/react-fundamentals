@@ -15,6 +15,12 @@ const secondBook = {
     'https://c.media-amazon.com/images/I/71gvbSzk+IL._UX300__PJku-sticker-v8,TopRight,0,-50_AC_UL254_SR254,254_.jpg',
 };
 
+const thirdBook = {
+  title: 'Atomic Habits',
+  author: 'James Clear',
+  image: 'https://c.media-amazon.com/images/I/81YkqyaFVEL._SY466_.jpg',
+};
+
 const BookList = () => {
   return (
     <section className="booklist">
@@ -28,7 +34,11 @@ const BookList = () => {
         author={secondBook.author}
         image={secondBook.image}
       />
- 
+      <Book
+        title={thirdBook.title}
+        author={thirdBook.author}
+        image={thirdBook.image}
+      />
     </section>
   );
 };

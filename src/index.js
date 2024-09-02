@@ -2,17 +2,41 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const title = 'Hillbilly Elegy: A Memoir of a Family and Culture in Crisis';
-const author = 'J. D. Vance';
-const image = './images/book-1.jpg';
+const firstBook = {
+  title: 'Hillbilly Elegy: A Memoir of a Family and Culture in Crisis',
+  author: 'J. D. Vance',
+  image: './images/book-1.jpg'
+}
+
+const secondBook = {
+  title: 'Linux for Absolute Beginners',
+  author: 'Andrew Warner',
+  image: 'https://c.media-amazon.com/images/I/416brJM-J4L._SY445_SX342_.jpg'
+}
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book author={author} title={title} image={image} />
-      <Book author={author} title={title} image={image} />
-      <Book author={author} title={title} image={image} />
-      <Book author={author} title={title} image={image} />
+      <Book
+        title={firstBook.title}
+        author={firstBook.author}
+        image={firstBook.image}
+      />
+      <Book
+        title={secondBook.title}
+        author={secondBook.author}
+        image={secondBook.image}
+      />
+      <Book
+        title={firstBook.title}
+        author={firstBook.author}
+        image={firstBook.image}
+      />
+      <Book
+        title={secondBook.title}
+        author={secondBook.author}
+        image={secondBook.image}
+      />
     </section>
   );
 };

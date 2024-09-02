@@ -43,6 +43,8 @@ body {
 }
 
 .book h4 {
-    color: red;
-    letter-spacing: 2px
+    color: #617d98;
+    font-size: 0.75rem;
+    margin-top: 0.75rem;
+    letter-spacing: 2px;
 }

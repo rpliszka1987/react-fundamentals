@@ -44,13 +44,18 @@ const EventExamples = () => {
   };
 
   const handleButtonClick = () => {
-    alert('form submitted');
+    alert('handle button click');
   };
   return (
     <section>
       <form>
         <h2>Typical Form</h2>
-        <input type="text" name="example" onChange={handleFormInput} stype={{ margin: '1rem 0' }} />
+        <input
+          type="text"
+          name="example"
+          onChange={handleFormInput}
+          stype={{ margin: '1rem 0' }}
+        />
       </form>
       <button onClick={handleButtonClick}>Click Me</button>
     </section>
@@ -59,7 +64,7 @@ const EventExamples = () => {
 
 const Book = (props) => {
   const { image, title, author } = props;
-  console.log(props);
+  // console.log(props);
   return (
     <article className="book">
       <img src={image} alt={title} />

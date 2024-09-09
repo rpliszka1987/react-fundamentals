@@ -27,26 +27,30 @@ const books = [
 ];
 
 const BookList = () => {
+  const someValue = 'shakeAndBake'
+  const displayValue = () => {
+    console.log(someValue)
+  }
+
   return (
     <section className="booklist">
       {books.map((book) => {
         const { id } = book;
-        return <Book {...book} key={id} />;
+        return <Book {...book} key={id} displayValue={displayValue}/>;
       })}
+      
     </section>
   );
 };
 
 const Book = (props) => {
-  const { image, title, author } = props;
-  const displayTitle = () => {
-    console.log(title);
-  };
+  const { image, title, author, displayValue } = props;
+  
   return (
     <article className="book">
       <img src={image} alt={title} />
       <h2>{title}</h2>
-      <button onClick={displayTitle}>Display Title</button>
+      <button onClick={displayValue}>Click Me</button>
       <h4>{author}</h4>
     </article>
   );

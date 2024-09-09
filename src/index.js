@@ -39,11 +39,14 @@ const BookList = () => {
 
 const Book = (props) => {
   const { image, title, author } = props;
-  // console.log(props);
+  const displayTitle = () => {
+    console.log(title);
+  };
   return (
     <article className="book">
       <img src={image} alt={title} />
       <h2>{title}</h2>
+      <button onClick={displayTitle}>Display Title</button>
       <h4>{author}</h4>
     </article>
   );

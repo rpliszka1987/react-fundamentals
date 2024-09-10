@@ -29,7 +29,7 @@ const books = [
 const BookList = () => {
   const getBook = (id) => {
     const book = books.find((book) => book.id === id);
-    console.log(book);
+    console.log(book.title);
   };
 
   return (

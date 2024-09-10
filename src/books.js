@@ -1,23 +1,26 @@
+import img1 from './images/book-1.jpg'
+import img2 from './images/book-2.jpg'
+import img3 from './images/book-3.jpg'
+
 export const books = [
   {
     title: 'Hillbilly Elegy: A Memoir of a Family and Culture in Crisis',
     author: 'J. D. Vance',
-    image: './images/book-1.jpg',
+    image: img1,
     id: 1,
   },
 
   {
     title: 'Linux for Absolute Beginners',
     author: 'Andrew Warner',
-    image:
-      'https://c.media-amazon.com/images/I/71gvbSzk+IL._UX300__PJku-sticker-v8,TopRight,0,-50_AC_UL254_SR254,254_.jpg',
+    image: img2,
     id: 2,
   },
 
   {
     title: 'Atomic Habits',
     author: 'James Clear',
-    image: 'https://c.media-amazon.com/images/I/81YkqyaFVEL._SY466_.jpg',
+    image: img3,
     id: 3,
   },
 ];
